@@ -1,0 +1,41 @@
+title: "[Question] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## ❓ Poser une question
+        Cherchez d'abord dans les discussions existantes : la réponse y est peut-être déjà.
+        **N'indiquez ni nom de client, ni numéro de téléphone, ni adresse e-mail** : cette discussion est publique.
+  - type: textarea
+    id: question
+    attributes:
+      label: Votre question
+      description: "Soyez le plus précis possible : ce que vous voulez faire, et ce qui se passe à la place."
+      placeholder: "Exemple : comment ajouter un membre de l'équipe à un seul événement ?"
+    validations:
+      required: true
+  - type: dropdown
+    id: appareil
+    attributes:
+      label: Sur quel appareil ?
+      options:
+        - iPhone
+        - iPad
+        - Les deux
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version de l'app
+      description: Visible dans Profil → À propos.
+      placeholder: "1.0"
+    validations:
+      required: false
+  - type: checkboxes
+    id: confidentialite
+    attributes:
+      label: Confidentialité
+      options:
+        - label: Je n'ai mis aucune donnée personnelle ni nom de client dans ce message.
+          required: true
