@@ -1,0 +1,55 @@
+title: "[Idée] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 💡 Proposer une idée
+        Merci de nous aider à améliorer FTEvents Pro. Plus votre idée part d'une situation réelle de terrain, plus elle est facile à étudier.
+        **Ne mettez ni nom de client, ni numéro de téléphone, ni adresse e-mail dans cette discussion** : elle est publique.
+  - type: dropdown
+    id: domaine
+    attributes:
+      label: Dans quel domaine ?
+      options:
+        - Événements
+        - Équipe et planning
+        - Matériel
+        - Recettes et coûts
+        - Documents
+        - Notifications
+        - Autre
+    validations:
+      required: true
+  - type: textarea
+    id: situation
+    attributes:
+      label: La situation sur le terrain
+      description: "Que faites-vous aujourd'hui, et qu'est-ce qui vous gêne ou vous fait perdre du temps ?"
+      placeholder: "Exemple : avant un marché, je refais à la main la liste du matériel pour chaque stand…"
+    validations:
+      required: true
+  - type: textarea
+    id: idee
+    attributes:
+      label: Votre idée
+      description: Ce que l'app pourrait faire pour vous aider, avec vos mots.
+    validations:
+      required: true
+  - type: dropdown
+    id: frequence
+    attributes:
+      label: À quelle fréquence en avez-vous besoin ?
+      options:
+        - Chaque jour
+        - Chaque semaine
+        - Chaque événement
+        - Quelques fois par an
+    validations:
+      required: false
+  - type: checkboxes
+    id: confidentialite
+    attributes:
+      label: Confidentialité
+      options:
+        - label: Je n'ai mis aucune donnée personnelle ni nom de client dans ce message.
+          required: true
