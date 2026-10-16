@@ -1,0 +1,29 @@
+title: "[Mon organisation] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🚚 Montrer comment vous utilisez FTEvents Pro
+        Racontez comment l'app s'intègre à votre quotidien : votre façon de préparer un événement, de gérer l'équipe, de suivre le matériel…
+        Vos astuces aident les autres opérateurs, et nous montrent ce qui compte vraiment pour vous.
+  - type: textarea
+    id: usage
+    attributes:
+      label: Votre façon de faire
+      description: Décrivez votre méthode en quelques lignes.
+    validations:
+      required: true
+  - type: textarea
+    id: astuce
+    attributes:
+      label: Votre meilleure astuce
+      description: Ce que vous auriez aimé savoir plus tôt.
+    validations:
+      required: false
+  - type: checkboxes
+    id: confidentialite
+    attributes:
+      label: Confidentialité
+      options:
+        - label: Je n'ai mis aucune donnée personnelle ni nom de client dans ce message ou ses captures d'écran.
+          required: true
