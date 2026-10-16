@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Question ou idée
+    url: https://github.com/Celtiore/fteventspro-community/discussions
+    about: Les questions et les idées se posent dans les Discussions.
